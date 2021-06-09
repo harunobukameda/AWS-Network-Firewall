@@ -1,0 +1,27 @@
+VPC CIDR: 10.10.0.0/16
+VPN Name: nwfwvpc
+
+Public Subnet CIDR: 10.10.0.0/24
+Public Subnet Name: public
+Public Subnet AZ  : 
+
+EC2 ID		: EC2 ID	
+EC2 Name	: wordpress
+EC2 PublicDNS	: 
+Route Table ID	: 
+Route Table	: public
+
+Internet Gateway: 
+
+FW Subnet Name: fw
+FW Subnet CIDR: 10.10.1.0/24
+FW Subnet ID  : 
+
+FW Route Table   : fwrt
+FW Route Table ID: 
+
+IGW Ingress Route Table   : igwrt
+IGW Ingress Route Table ID:
+
+
+alert tcp any any -> any any (msg:"TCP traffic detected"; sid:200001; rev:1;)
